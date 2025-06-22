@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oxanium:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/bg.jpg") no-repeat center/cover;
+  min-height: 100vh;
+  color: #E1E1E6;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#app {
+  width: 100%;
+  max-width: 400px;
+  background: #191D24;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 2.5rem;
+  color: #DAE4F2;
+}
+
+h1 div {
+  color: #6F9DE2;
+}
+
+main {
+  display: grid;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+section {
+  background: #191D24;
+  padding: 1.5rem;
+  border: 1px solid #21252C;
+  border-radius: 1rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 1.25rem;
+  color: #C8D0DA;
+}
+
+.badge {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #9871f3;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge::before {
+  content: '';
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/radio.svg") no-repeat center;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  border: 1px solid #21252C;
+  background-color: #13161B;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input-group input {
+  background: none;
+  border: none;
+  flex: 1;
+  padding: 0 0.75rem;
+  color: #E1E1E6;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+button[type="submit"] {
+  border: 0;
+  background: #2A313C;
+  color: #6F9DE2;
+  min-height: 2.75rem;
+  padding: 0 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: filter 0.2s;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  filter: brightness(1.1);
+}
+
+.page-invite main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+h3 {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 1rem;
+  color: #9871f3;
+}
+
+.page-invite main p {
+  color: #C8D0DA;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.invite-message {
+  color: #C8D0DA;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.input-copy-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.input-copy-wrapper .input-group {
+  background-color: #13161B;
+  border: 1px solid #21252C;
+  border-radius: 12px;
+  padding: 0.5rem 0.75rem;
+}
+
+.input-copy-wrapper input {
+  border: none;
+  background: transparent;
+  color: #E1E1E6;
+  flex: 1;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.btn-icon {
+  background: transparent;
+  border: none;
+  height: 100%;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #21252C;
+  transition: background 0.2s;
+}
+
+.btn-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #6F9DE2;
+}
+
+.btn-icon:hover {
+  background: #3a4250;
+}
+
+#copy-status {
+  font-size: 0.75rem;
+  color: #50fa7b;
+  margin-top: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.stats {
+  background-color: #21252C;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats h4 {
+  font-size: 1.75rem;
+  color: #E1E1E6;
+}
+
+.stats p {
+  font-size: 0.875rem;
+  color: #C8D0DA;
+}
+
+.btn-back {
+  margin-top: 1.5rem;
+  background: #191D24;
+  border: 1px solid #2A313C;
+  color: #6F9DE2;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.2s;
+  width: 100%;
+}
+
+.btn-back:hover {
+  filter: brightness(1.2);
+}
