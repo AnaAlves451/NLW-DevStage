@@ -1,38 +1,30 @@
-# nlw- devstage
-
+# nlw-devstage
 
 <p align="center">
-  <img alt="projeto DevLinks" src="assets/image (2).png" width="100%">
-
+  <img alt="DevStage Desktop" src="assets/image (2).png" width="100%">
 </p>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="assets/image (3).png" width="100%">
-
+  <img alt="DevStage Mobile" src="assets/image (3).png" width="100%">
 </p>
 
+## 🚀 Technologies
 
+This project was developed using the following technologies:
 
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML e CSS
+- HTML & CSS  
 - JavaScript
 
-## 💻 Projeto
+## 💻 Project
 
-O DevStage é uma aplicação para inscrição em eventos 
+**DevStage** is an event registration application.
 
 <p align="center">
   <a href="https://ana-alves-santos.github.io/nlw-devstage/" target="_blank">
-    🚀 Acesse o projeto online
+    🚀 Access the live project
   </a>
 </p>
 
-## :memo: Licença
+## :memo: License
 
-Esse projeto está sob a licença MIT.
-
-
----
+This project is under the MIT license.
