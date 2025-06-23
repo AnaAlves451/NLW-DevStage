@@ -26,7 +26,7 @@ O DevStage é uma aplicação para inscrição em eventos
 
 <p align="center">
   <a href="https://ana-alves-santos.github.io/nlw-devstage/" target="_blank">
-    👉 Acesse aqui
+    🚀 Acesse o projeto online
   </a>
 </p>
 
