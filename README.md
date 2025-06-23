@@ -1,4 +1,4 @@
-# NLW- DevStage
+# nlw- devstage
 
 
 <p align="center">
@@ -23,6 +23,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O DevStage é uma aplicação para inscrição em eventos 
+
+<p align="center">
+  <a href="https://ana-alves-santos.github.io/nlw-devstage/" target="_blank">
+    👉 Acesse aqui
+  </a>
+</p>
 
 ## :memo: Licença
 
