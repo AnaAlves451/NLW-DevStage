@@ -27,4 +27,7 @@ This project was developed using the following technologies:
 
 ## :memo: License
 
-This project is under the MIT license.
+This project is under the [MIT License](LICENSE).
+
+---
+Project developed during Rocketseat NLW event.
