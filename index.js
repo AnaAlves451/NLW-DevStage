@@ -13,12 +13,17 @@ const getUser = (userData) => {
 };
 
 // Conta quantas inscrições foram feitas pelo usuário (refBy)
+// Inclui o próprio usuário como "1 inscrição"
 const getTotalSubscribers = (userData) => {
-  return users.filter(user => user.refBy === userData.ref).length;
+  const referred = users.filter(user => user.refBy === userData.ref).length;
+  return referred + 1;
 };
 
 // Exibe a página de convite após inscrição
 const showInvite = (userData) => {
+  const total = getTotalSubscribers(userData);
+  const textoInscricao = total === 1 ? 'Inscrição feita' : 'Inscrições feitas';
+
   app.innerHTML = `
     <header>
       <img src="https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/logo.svg" alt="Logo">
@@ -36,7 +41,7 @@ const showInvite = (userData) => {
 
       <div class="input-copy-wrapper">
         <div class="input-group">
-          <input type="text" id="link" value="devstage.com/codecraft-summit-2025/7289" readonly>
+          <input type="text" id="link" value="devstage.com/codecraft-summit-2025/?ref=${userData.ref}" readonly>
           <button id="btn-copy" class="btn-icon" title="Copiar link" aria-label="Copiar">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#6F9DE2">
               <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
@@ -47,8 +52,8 @@ const showInvite = (userData) => {
       </div>
 
       <section class="stats">
-        <h4>${getTotalSubscribers(userData)}</h4>
-        <p>Inscrições feitas</p>
+        <h4>${total}</h4>
+        <p>${textoInscricao}</p>
       </section>
 
       <button id="btn-voltar" class="btn-back">Voltar para inscrição</button>
